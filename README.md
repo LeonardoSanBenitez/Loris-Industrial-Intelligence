@@ -1,26 +1,87 @@
 # LorisWeb
 Main repository of the Loris Industrial Intelligence web application
+* **Requisitos gerais**
+  * Responsivo
+  * Flexível (modular)
+  * "High tech"
+  * Fácil de usar
+  * Permitir comparações simultaneas de varias localidades
+  * Fornecer alguns modelos fixos de visualização, mas permitindo escolher as variáveis visualizadas
+* **Funcionalidades**
+  * Alertas (consumo excessivo, velocidade máxima atingida, máquina parada, etc)
+  * Atualizações (no sistema, na fábrica, no setor, etc)
+  * Indicadores diários (se tudo vai bem: produção, consumo, etc)
+  * Estatísticas gerais (número de equipamentos instalados, problemas recentes, etc)
+* **Modelos de visualização**
+  * Vetor trifásico (estilo MedFase)
+  * Série temporal crua (estilo Curva de Carga)
+  * Série temporal aglomerada (estilo HighStock)
+  * Tabela instantânea
+  * Gauge de excesso
+  * Heat map de utilização
+  * Extrapolar medições?
+
 
 ## File structure
-* landing page
+* **landing page**
     * Initial page, to the extern public
     * Estatic, made with boostrap (I used a w3 template)
-* loris.system
+* **loris.system**
     * main application
     * nodejs + vueCli
-* examples
+* **examples**
     * black-dashboard-master: template from [CreativeTim](https://www.creative-tim.com/product/black-dashboard)
-    * startbootstrap-sb-admin: template from [startbootstrap](https://startbootstrap.com/themes/sb-admin-2/)
-* dataBase
+    * simples-dashboard: template from [startbootstrap](https://startbootstrap.com/themes/sb-admin-2/)
+    * simple-sidebar: template from [startbootrap](https://startbootstrap.com/templates/simple-sidebar/)
+* **dataBase**
     * codes and documentation of the database
     * PostgreeSQL
-* pythonCodes
+* **pythonCodes**
     * Test, exercices and real analysis using python
     * IDE used: jupiter nodebooks
 
+## Implementation guidelines
+
+* **Database**
+
+    * postgree
+    * db Proami
+    * TODO: ER diagram
+
+* **Backend: nodeJS**
+
+  * REST API (db access)
+  * athentication and access control
+  * Data analisys (only on demand)
+
+* **Front end**
+
+  * VueJS, usando CLI
+  * bootstrap
+
+* **Card model**: 
+
+    ```javascript
+    {
+        type: "vetorTrifasico | temporalCrua | table | etc...",
+        title: "string",
+        subtitle: "string",
+        yAxis: "string",
+        xAxis: "string",
+        updatePeriod: number (in seconds)
+        series:[{...}]
+    }
+    ```
+
+
 # Design 
 
+* Default font: helvetica neue
+* theme: dark blue
+
 ## Color palette
+
+* quadrica, angulada 60º
 
 ```css
 /* CSS - Cascading Style Sheet */
@@ -89,7 +150,4 @@ Main repository of the Loris Industrial Intelligence web application
 /* http://paletton.com */
 ```
 
-![palette](/examples/palette.png)
-
-
-## wireframes
+![palette](examples/palette.png)
