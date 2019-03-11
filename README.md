@@ -89,6 +89,7 @@ Main repository of the Loris Industrial Intelligence web application
 /* http://paletton.com */
 ```
 
-![](/home/leonardodb/Desktop/Loris_System/examples/Collor pallet.png)
+![palette](/examples/palette.png)
+
 
 ## wireframes
