@@ -59,19 +59,36 @@ Main repository of the Loris Industrial Intelligence web application
   * VueJS, usando CLI
   * bootstrap
 
-* **Card model**: 
+## Card models
+* Generic model:
+```javascript
+{
+type: "vetorTrifasico | temporalCrua | table | etc...",
+title: "",
+subtitle: "",
+yAxis: "",
+xAxis: "",
+updatePeriod: number (in seconds)
+series:[{...}]
+}
+```
+* Vetor trifásico
+  * estilo MedFase
 
-    ```javascript
-    {
-        type: "vetorTrifasico | temporalCrua | table | etc...",
-        title: "string",
-        subtitle: "string",
-        yAxis: "string",
-        xAxis: "string",
-        updatePeriod: number (in seconds)
-        series:[{...}]
-    }
-    ```
+* Série temporal crua
+  * https://www.highcharts.com/stock/demo/basic-line
+
+* Série temporal aglomerada
+  * https://www.highcharts.com/stock/demo/column
+
+* Tabela instantânea
+  *
+* Gauge de excesso
+  *
+* Heat map de utilização
+  * Só será possível fazer sob demanda (por causa do mapa da fábrica), e apenas quando houver vários sensores instalados
+  * https://www.highcharts.com/maps/demo/heatmap
+
 
 
 # Design 
