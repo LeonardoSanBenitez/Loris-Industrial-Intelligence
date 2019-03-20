@@ -1,0 +1,56 @@
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+    <script src="themes/gray.js"></script>
+
+
+    <h1>Componente: CardTemporalSeriesRaw</h1>
+
+    <div id="container" style="margin: 0px 200px 0px 200px;"></div>
+</body>
+
+
+<script>
+var config = {
+    chart: {
+    zoomType: 'x'
+    },
+    rangeSelector: {
+        selected: 1
+    },
+    title: {
+        text: 'Titulo'
+    },
+    yAxis: {
+        title: {
+            text: 'Variavel'
+        },
+        opposite: false,
+    },
+    series: []
+};
+
+
+
+$.getJSON('api/cardData.php?cardId=1', function (response) {
+
+    config.title.text = response.title;
+    config.yAxis.title.text = response.yTitle;
+    for (i in response.series) {
+        config["series"][i] = {
+            name: response.series[i].title,
+            data: response.series[i].data
+        }
+    };
+
+    // Create the chart
+    Highcharts.stockChart('container', config);
+    // update data every x seconds
+});
+
+
+
+
+</script>

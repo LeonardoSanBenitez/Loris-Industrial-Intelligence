@@ -80,6 +80,7 @@ series:[{...}]
 
 * Série temporal aglomerada
   * https://www.highcharts.com/stock/demo/column
+  * https://www.highcharts.com/demo/box-plot
 
 * Tabela instantânea
   *
