@@ -1,4 +1,5 @@
 <body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
 
@@ -6,7 +7,9 @@
     <script src="themes/gray.js"></script>
 
 
-    <h1>Componente: CardGauge</h1>
+
+
+    <h2>Componente: CardGauge</h2>
 
     <div id="container" style="margin: 0px 200px 0px 200px;"></div>
 </body>
@@ -16,15 +19,12 @@
 
 
 var config = {
-
     chart: {
         type: 'solidgauge'
     },
-
     title: {
-        text: 'Atendimento a meta'
+        text: 'Titulo'
     },
-
     pane: {
         center: ['50%', '85%'],
         size: '140%',
@@ -37,30 +37,20 @@ var config = {
             shape: 'arc'
         }
     },
-
     tooltip: {
         enabled: false
     },
-
-    // the value axis
     yAxis: {
-        stops: [
-            [0.1, '#55BF3B'], // green
-            [0.5, '#DDDF0D'], // yellow
-            [0.9, '#DF5353'] // red
-        ],
+        stops: [],
         lineWidth: 0,
         minorTickInterval: 20,
         tickAmount: 2,
         title: {
-            y: 30,
-            text: 'Producao media'
+            y: 30
         },
         labels: {
             y: 16
         },
-        min: 0,
-        max: 200,
     },
 
     plotOptions: {
@@ -73,8 +63,8 @@ var config = {
         }
     },
     series: [{
-        name: 'Speed',
-        data: [80],
+        name: 'Variable',
+        data: [0],
         dataLabels: {
             format: '<div style="text-align:center"><span style="font-size:25px;color:' +
                 ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'silver') + '">{y}</span><br/>' +
@@ -83,7 +73,21 @@ var config = {
     }]
 };
 
-Highcharts.chart('container', config);
+
+$.getJSON('api/cardData2.php?cardId=2', function (response) {
+
+    config.title.text = response.title;
+    config.yAxis.title.text = response.yTitle;
+    config.yAxis.min = response.yMin;
+    config.yAxis.max = response.yMax;
+    config.yAxis.stops = response.colors;
+    config.series[0].data[0] = response.data;
+
+    // Create the chart
+    Highcharts.chart('container', config);
+    // update data every x seconds
+});
+
 
 
 
