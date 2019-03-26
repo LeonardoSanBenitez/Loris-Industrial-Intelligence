@@ -1,5 +1,3 @@
-[TOC]
-
 # Fundamentação teórica
 
 ## Pré processamento dos dados
@@ -71,7 +69,7 @@
 
   * Distance metric used: minkowski distance with p=2 (euclidian):
 
-    ![1553617757275](Images - README/1553617757275.png)
+    ![1553617757275](images/1553617757275.png)
 
 * **Libraries used**
 
@@ -89,10 +87,10 @@
   * We can also normalize, and add colors to the cells
   * To our data, the result was:
 
-![1553615499409](Images - README/1553615499409.png)
+![1553615499409](images/1553615499409.png)
 
 * **Classification report**
   * Build a text report showing the main classification metrics (precision, recall, f score, suport, etc)
   * As medidas utilizadas sao para classificadores binários (duas classes), mas podem ser facilmente generalizados (geralmente tomamos uma como positiva e as demais como negativas)
 
-![1553615513978](Images - README/1553615513978.png)
+![1553615513978](images/1553615513978.png)
