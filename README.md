@@ -73,19 +73,44 @@ series:[{...}]
 }
 ```
 * Vetor trifásico
+
   * estilo MedFase
 
 * Série temporal crua
+
   * https://www.highcharts.com/stock/demo/basic-line
 
 * Série temporal aglomerada
   * https://www.highcharts.com/stock/demo/column
   * https://www.highcharts.com/demo/box-plot
 
-* Tabela instantânea
-  *
-* Gauge de excesso
-  *
+* **Tabela instantânea**
+
+  * o front renderiza uma tabela genérica, com um numero arbitrário de linhas e colunas
+
+  * O nome das colunas no header é pego das keys do primeira linhas 
+
+    ```javascript
+    [{
+        "coluna1": valor1,
+        "coluna2": valor2
+    },
+    {
+        "coluna1": valor3,
+        "coluna2": valor4
+    }
+    ```
+
+* **Gauge produtividade**
+
+  * As cores deixei fixas, mas podem ser alteradas 
+
+    ```json
+    
+    ```
+
+    
+
 * Heat map de utilização
   * Só será possível fazer sob demanda (por causa do mapa da fábrica), e apenas quando houver vários sensores instalados
   * https://www.highcharts.com/maps/demo/heatmap
