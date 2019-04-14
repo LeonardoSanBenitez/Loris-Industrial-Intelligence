@@ -1,5 +1,9 @@
 # LorisWeb
-Main repository of the Loris Industrial Intelligence web application
+* Main repository of the Loris Industrial Intelligence web application
+* **Objetivos da plataforma**
+  * Fornecer um ambiente completo de monitoramento em tempo real de parâmetros físicos
+  * Além dos dados “crus”, entregaremos análises e interpretações dos dados
+
 * **Requisitos gerais**
   * Responsivo
   * Flexível (modular)
@@ -7,85 +11,127 @@ Main repository of the Loris Industrial Intelligence web application
   * Fácil de usar
   * Permitir comparações simultaneas de varias localidades
   * Fornecer alguns modelos fixos de visualização, mas permitindo escolher as variáveis visualizadas
-* **Funcionalidades**
-  * Alertas (consumo excessivo, velocidade máxima atingida, máquina parada, etc)
-  * Atualizações (no sistema, na fábrica, no setor, etc)
-  * Indicadores diários (se tudo vai bem: produção, consumo, etc)
-  * Estatísticas gerais (número de equipamentos instalados, problemas recentes, etc)
-* **Modelos de visualização**
-  * Vetor trifásico (estilo MedFase)
-  * Série temporal crua (estilo Curva de Carga)
-  * Série temporal aglomerada (estilo HighStock)
-  * Tabela instantânea
-  * Gauge de excesso
-  * Heat map de utilização
-  * Extrapolar medições?
 
+## Repository File structure
 
-## File structure
 * **landing page**
-    * Initial page, to the extern public
-    * Estatic, made with boostrap (I used a w3 template)
+  * Initial page, to the extern public
+  * Estatic, made with boostrap (I used a w3 template)
 * **loris.system**
-    * main application
-    * nodejs + vueCli
+  * main application
+  * nodejs + vueCli
 * **examples**
-    * black-dashboard-master: template from [CreativeTim](https://www.creative-tim.com/product/black-dashboard)
-    * simples-dashboard: template from [startbootstrap](https://startbootstrap.com/themes/sb-admin-2/)
-    * simple-sidebar: template from [startbootrap](https://startbootstrap.com/templates/simple-sidebar/)
+  * black-dashboard-master: template from [CreativeTim](https://www.creative-tim.com/product/black-dashboard)
+  * simples-dashboard: template from [startbootstrap](https://startbootstrap.com/themes/sb-admin-2/)
+  * simple-sidebar: template from [startbootrap](https://startbootstrap.com/templates/simple-sidebar/)
 * **dataBase**
-    * codes and documentation of the database
-    * PostgreeSQL
+  * codes and documentation of the database
+  * PostgreeSQL
 * **pythonCodes**
-    * Test, exercices and real analysis using python
-    * IDE used: jupiter nodebooks
+  * Test, exercices and real analysis using python
+  * IDE used: jupiter nodebooks
 
 ## Implementation guidelines
 
 * **Database**
-
-    * postgree
-    * db Proami
-    * TODO: ER diagram
-
+  * postgree
+  * db Proami
+  * TODO: ER diagram
 * **Backend: nodeJS**
-
   * REST API (db access)
   * athentication and access control
   * Data analisys (only on demand)
-
 * **Front end**
-
   * VueJS, usando CLI
   * bootstrap
 
+## Loris.system pages
+
+* Cada página possui um JSON de configuração de determina quais gráficos ela vai conter 
+
+* Esse JSON possui apenas a modelagem abstrata da página, ignorando estilização
+
+* **Home**
+
+  * Aprensenta um resumo e as principais informações sobre a fábrica
+  * Alertas (consumo excessivo, velocidade máxima atingida, máquina parada, etc)
+  * Atualizações (no sistema, na fábrica, no setor, etc)
+  * Indicadores diários (se tudo vai bem: produção, consumo, etc)
+  * Estatísticas gerais (número de equipamentos instalados, problemas recentes, etc)
+
+* **Bashboard**
+
+  * Grid de gráficos, dispostos de forma a facilitar a comparação
+  * Array of generic cards:
+
+  ```javascript
+  [{
+      "type": "vetorTrifasico | temporalCrua | table | etc...",
+      "title": "",
+      "subtitle": "",
+      "yAxis": "",
+      "xAxis": "",
+      "updatePeriod": number (in seconds)
+      "series":[]
+  },
+  {
+      ...
+  }]
+  ```
+
 ## Card models
-* Generic model:
-```javascript
+
+* **Série temporal simples**
+  * Vue component: cardTemporalSimple
+  * https://www.highcharts.com/demo/line-basic 
+  * Se receber apenas uma fase, omite a legenda
+  * Propriedades do card
+    * location: uid do dispositivo embarcado
+    * aggregationTime: tempo sobre o qual é calculado a média (em segundos)
+  * Propriedades de cada série
+    * name: o que vai aparecer no front
+    * variable: o que vai ser puxado o banco de dados
+    * data: array com os pontos
+  * Exemplo de card JSON: 
+
+``` JSON
 {
-type: "vetorTrifasico | temporalCrua | table | etc...",
-title: "",
-subtitle: "",
-yAxis: "",
-xAxis: "",
-updatePeriod: number (in seconds)
-series:[{...}]
+    "type": "cardTemporalSimple",
+    "title": "Tensão por fase (KV)",
+    "updatePeriod": 600,
+    "location": "000001",
+    "aggregationTime": 300,
+    "series":[
+    	{
+            "name": "Fase A",
+            "variable": "ta",
+            "data": [222, 230, 225, 230]
+        },{
+            "name": "Fase B",
+            "variable": "tb",
+            "data": [212, 220, 210, 215]
+        },{
+            "name": "Fase C",
+            "variable": "tc",
+            "data": [202, 225, 205, 200]
+        }
+	]
 }
 ```
-* Vetor trifásico
-  * estilo MedFase
 
-* Série temporal crua
+* **Série temporal com janela de tempo**
+  * Vue component: cardTemporalWindow
   * https://www.highcharts.com/stock/demo/basic-line
-
-* Série temporal aglomerada
+* **Série temporal aglomerada**
+  * Vue component: cardTemporalAgregated
   * https://www.highcharts.com/stock/demo/column
-
-* Tabela instantânea
-  *
-* Gauge de excesso
-  *
-* Heat map de utilização
+* **Vetor trifásico**
+  * estilo MedFase
+* **Tabela instantânea**
+  * ?
+* **Gauge de excesso**
+  * ?
+* **Heat map de utilização**
   * Só será possível fazer sob demanda (por causa do mapa da fábrica), e apenas quando houver vários sensores instalados
   * https://www.highcharts.com/maps/demo/heatmap
 
