@@ -47,3 +47,16 @@ body {
     margin-left: -15rem;
   }
 }
+
+
+
+
+
+/* RODAPÉ */
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+	text-align: center;
+}
+

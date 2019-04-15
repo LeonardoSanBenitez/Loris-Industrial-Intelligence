@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Loris Web</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/5792c6f596.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Loris S.A. <i class="fa fa-user-circle fa-4x" aria-hidden="true"></i></div>
+      <div class="list-group list-group-flush">
+        <a href="#" id="dashboard-menu-item" class="list-group-item list-group-item-action bg-light">Dashboard <i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Graficos <i class="fa fa-line-chart" aria-hidden="true"></i></a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Ajuda <i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+		  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+			<button class="btn btn-primary" id="menu-toggle">Menu</button>
+					
+				<form action=" " method="post">
+					  <label for="busca">Buscar</label>
+					  
+					  <div class="container">  
+						<input type="search" id="busca" name="q">
+						<button type="submit">OK</button>
+					  </div>
+				</form>	
+					
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			</div>
+		  </nav>
+
+		  <div class="container-fluid">
+			<h1 class="mt-4">Simple Sidebar</h1>
+			<p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+			<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+		   </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+
+	<footer id="rodape">
+		
+		<a href="http://facebook.com" target="_blank">Facebook</a> | 
+		<a href="http://twitter.com" target="_blank">Twitter</a>
+	</footer>
+
+
+</body>
+
+</html>
