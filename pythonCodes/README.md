@@ -8,28 +8,27 @@
   - variancia durante a noite (em uma noite, e entre o mes)
   - fator de proporção noturna: media (noite)/media(aula)
   - fator de carga: media/máxima
-  - 
-  - 
-- **Função Custo (clima)**
-  - regressão
-  - Precisamos ver uma sala específica (preferencialmente a nossa)
-- **Classificador de sala**    
+- **Regressão: estimativa de fatura do câmpus baseada em clima**
+  - status: feito (porem com poucos dados)
+  - Entrada: dados climáticos (temperatura, humidade, etc)
+  - Saída: estimativa de fatura (em KWH)
+- **Classificação: consumo noturno anômalo**
+  - Status: Feito
+- **Classificação: tipo de sala**    
   - Entrada: análises estatísticas da sala 
   - saída: laboratório ou sala de aula 
   - (-) precisamos medir várias salas 
-- **Função pessoas (tipo-de-AC, potência-diária-cosumida, clima, tipo-de-sala)**
-  - Regressão
+- **Regressão: pessoas na sala**
+  - Entrada: tipo-de-AC, potência-diária-cosumida, clima, tipo-de-sala
   - Saída: prever quantas pessoas há na sala 
-- **indicação de troca de AC**
-  - Arvore de decição
+- **Classificação: indicação de troca de AC**
+  - Algoritmo: Arvore de decição
   - Entrada: dados estatísticos, potência diaria consumida, nº de pessoas, tipo de AC
-  - Saída: sim ou nao 
+  - Saída: é pra trocar ou não
   - (-) precisamos criar dados fake, para simular uma situação de necessidade de troca 
-- **função lampadas (consumo)**
-  - regressão (com truncamento para inteiro)
+- **Regressão: lampadas**
   - entrada: potencias (ativa, reativa), etcs
-  - saída: numero de lampadas fluerescentes na sala
-- **alunos do campus**
-  - Regressao
+  - saída: numero de lampadas fluerescentes na sala (com truncamento para inteiro)
+- **Regressão: alunos do campus**
   - utilizando os dados do smart ifsc
   - Temos que ir atrás dos dados de nº de alunos e servidores

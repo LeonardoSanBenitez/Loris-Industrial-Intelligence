@@ -29,8 +29,8 @@ input[type="button"],input[type="submit"],.contact-form input[type="submit"]{
 	-ms-transition:0.5s all;
 }
 h1,h2,h3,h4,h5,h6{
-	margin:0;	
-}	
+	margin:0;
+}
 p{
 	margin:0;
 }
@@ -206,7 +206,6 @@ p.sub-para {
     line-height: 30px;
     letter-spacing: 1px;
     margin-top: 1em;
-    text-transform: capitalize;
 }
 
 
@@ -281,7 +280,7 @@ p.sub-para {
 
 .bs-slider-overlay1 {
     width: 100%;
-    height: 100%; 
+    height: 100%;
 	background: rgba(0, 0, 0, 0.3);
     background-size: 2px;
     -webkit-background-size: 2px;
@@ -330,19 +329,6 @@ h5.tag span {
     background-size: cover;
 }
 
-.csslider>ul>li:nth-child(2) {
-    background: url(../images/banner2.jpg) no-repeat center;
-    background-size: cover;
-}
-
-.csslider>ul>li:nth-child(3) {
-    background: url(../images/banner3.jpg) no-repeat center;
-    background-size: cover;
-}
-.csslider>ul>li:last-child {
-    background: url(../images/banner4.jpg) no-repeat center;
-    background-size: cover;
-}
 
 .csslider {
     position: relative;
@@ -557,7 +543,7 @@ header {
 }
 
 /* Giving a background-color to the nav container. */
-nav { 
+nav {
 	margin:0;
 	padding: 0;
 }
@@ -581,7 +567,7 @@ nav ul {
 	list-style: none;
 	position: relative;
 	}
-	
+
 /* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
@@ -591,8 +577,7 @@ nav ul li {
 
 /* Styling the links */
 nav a {
-    font-weight: 400;	
-    text-transform: capitalize;
+    font-weight: 400;
     color: #fff;
     letter-spacing: 2px;
     font-size: 15px;
@@ -605,12 +590,12 @@ nav a {
 nav ul li ul li:hover { background: #f8f9fa; }
 
 /* Background color change on Hover */
-nav a:hover { 
+nav a:hover {
     color: #fff;
     background: transparent;
     border-bottom: 2px solid #fff;
 }
-.menu li.active  a{ 
+.menu li.active  a{
     color: #fff;
     background: transparent;
     border-bottom: 2px solid #fff;
@@ -620,9 +605,9 @@ nav a:hover {
  * and giving it a position of absolute */
 nav ul ul {
 	display: none;
-	position: absolute; 
+	position: absolute;
 	/* has to be the same number as the "line-height" of "nav a" */
-	top: 25px; 
+	top: 25px;
     background: #fff;
     padding: 10px;
 }
@@ -633,7 +618,7 @@ ul.inner-dropdown a:hover {
 nav ul li:hover > ul {
 	display:inherit;
 }
-	
+
 /* Fisrt Tier Dropdown */
 nav ul ul li {
 	width:160px;
@@ -647,18 +632,18 @@ nav ul ul li a {
     display: block;
 }
 
-/* Second, Third and more Tiers	
+/* Second, Third and more Tiers
  * We move the 2nd and 3rd etc tier dropdowns to the left
  * by the amount of the width of the first tier.
 */
 nav ul ul ul li {
 	position: relative;
 	top:-60px;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
-	left:170px; 
+	/* has to be the same number as the "width" of "nav ul ul li" */
+	left:170px;
 }
 
-	
+
 /* Change ' +' in order to change the Dropdown symbol */
 li > a:only-child:after { content: ''; }
 
@@ -747,15 +732,15 @@ li > a:only-child:after { content: ''; }
  	nav ul ul ul a {
 		background-color: transparent;
 	}
-  
+
 	nav ul li ul li .toggle,
 	nav ul ul a,
   nav ul ul ul a{
-		padding:14px 20px;	
+		padding:14px 20px;
 		color:#FFF;
-		font-size:17px; 
+		font-size:17px;
 	}
-  
+
 	/* Hide Dropdowns by Default */
 	nav ul ul {
 		float: none;
@@ -763,13 +748,13 @@ li > a:only-child:after { content: ''; }
 		color: #ffffff;
 		/* has to be the same number as the "line-height" of "nav a" */
 	}
-		
+
 	/* Hide menus on hover */
 	nav ul ul li:hover > ul,
 	nav ul li:hover > ul {
 		display: none;
 	}
-		
+
 	/* Fisrt Tier Dropdown */
 	nav ul ul li {
 		display: block;
@@ -779,7 +764,7 @@ li > a:only-child:after { content: ''; }
 
 	nav ul ul ul li {
 		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
+		/* has to be the same number as the "width" of "nav ul ul li" */
 
 	}
 	nav a {
@@ -825,7 +810,6 @@ li > a:only-child:after { content: ''; }
     line-height: 32px;
     color: #8b8e96;
     letter-spacing: 1px;
-    text-transform: capitalize;
 }
 .welcome a {
     color: #fff;
@@ -976,7 +960,7 @@ h1.heading,h3.heading {
 
 /*-- book --*/
 .book {
-    background: url(../images/banner1.jpg) no-repeat center;
+    background: url(../images/banner2.jpg) no-repeat center;
     background-size: cover;
 	background-attachment: fixed;
 }
@@ -985,7 +969,6 @@ h1.heading,h3.heading {
 }
 .book h3 {
     font-size: 40px;
-    text-transform: capitalize;
     color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
@@ -1275,14 +1258,13 @@ p.text {
 /*-- Latest News --*/
 
 .blog-wthree{
-    background: #353c4e;	
-    background: #f8f9fa;	
-    background: #00bcd1;	
+    background: #353c4e;
+    background: #f8f9fa;
+    background: #00bcd1;
 }
 .news-blog h4 {
     font-size: 20px;
     color: #fff;
-    text-transform: capitalize;
     letter-spacing: 1px;
     font-weight: 600;
     line-height: 35px;
@@ -1373,7 +1355,6 @@ p.text {
     line-height: 27px;
     color: #777;
     background-color: transparent;
-    text-transform: capitalize;
     background-image: none;
     border-radius: 5px;
     letter-spacing: 1px;
@@ -1571,7 +1552,6 @@ p.text {
 /*-- newsletter --*/
 h4.newsletter {
     font-size: 35px;
-    text-transform: capitalize;
     letter-spacing: 1px;
     color: #fff;
     font-weight: 600;
@@ -1580,7 +1560,6 @@ h4.newsletter {
     font-size: 15px;
     letter-spacing: 1px;
     color: #eee;
-	text-transform: capitalize;
 }
 .newsletter {
     background: #00bbd1;
@@ -1595,7 +1574,6 @@ h4.newsletter {
     padding: 16px 16px 16px 20px;
     color: #333;
     font-size: 14px;
-    text-transform: capitalize;
     width: 70%;
     border: none;
 	letter-spacing: 2px;
@@ -1627,7 +1605,6 @@ h4.newsletter {
     color: #fff;
     padding-top: 10px;
     display: block;
-    text-transform: capitalize;
 }
 .newsletter form span a {
     color: #fff;
@@ -1664,7 +1641,7 @@ a.move-top span {
 	}
 }
 @media(max-width:1280px) {
-	
+
 }
 @media(max-width:1080px) {
 	.section_grids h3 {
@@ -1817,7 +1794,7 @@ a.move-top span {
 	}
 }
 @media(max-width:600px) {
-	
+
 }
 @media(max-width:568px) {
 	.banner-text {
@@ -1831,7 +1808,7 @@ a.move-top span {
 	}
 }
 @media(max-width:480px) {
-	
+
 	h1.heading, h3.heading {
 		font-size: 35px;
 	}
