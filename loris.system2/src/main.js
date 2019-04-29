@@ -3,8 +3,8 @@ import App from "./App.vue";
 import router from './router'
 
 //COMPONENTES (rotas estão na pasta /Routes)
-import GraficoLinha from "./components/templateGraficoLinha.vue"
-Vue.component('cardTemporalSimple', GraficoLinha)
+import CardTemporalSimple from "./components/cardTemporalSimple.vue"
+Vue.component('cardTemporalSimple', CardTemporalSimple)
 
 // INSTANCIA
 new Vue({

@@ -1,5 +1,12 @@
 <template>
-    <div v-bind:id="cardConfig.id" class="divGrafico"></div>
+  <div>
+
+    <p>
+      oi!!!
+    </p>
+    <!-- <div v-bind:id="cardConfig.id" class="divGrafico"></div> -->
+  </div>
+
 </template>
 
 <script>
@@ -10,6 +17,7 @@ export default {
     cardConfig: Object,
   },
   mounted: function () {
+
       Highcharts.chart(this.cardConfig.id, {
           title: {
               text: this.cardConfig.title

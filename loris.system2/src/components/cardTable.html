@@ -1,0 +1,93 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+
+    <!-- tabela -->
+    <div id="app">
+
+
+    <section id="data-hub" class="row table-responsive">
+      <table class="table table-hover">
+        <thead class="thead-light" >
+        <tr>
+          <th v-for="(col, key) in data_received[0]" scope="col"> {{key}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="row in data_received">
+            <td v-for="cell in row">
+                {{ cell }}
+            </td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    </div>
+    <a href="dashboard.html">voltar</a>
+</body>
+
+<style>
+
+/***************************************************************
+****                       TABLE                            ****
+***************************************************************/
+section#data-hub{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	padding: 20px;
+
+}
+@media (max-width: 992px){
+	section#data-hub{width: 80%;}
+}
+@media (max-width: 480px){
+	section#data-hub{width: 100%;}
+}
+#data-hub  thead th{
+	text-align: center;
+	background-color: #051A2D;
+	color: #EF921A;
+	font-size: 1.1em;
+}
+#data-hub tbody{
+  background-image: linear-gradient(to right, #02284A, #03447c);
+	color: white;
+	font-size: 1.05em;
+    text-align: center;
+}
+#data-hub tbody tr:hover{
+	background-color: #051A2D;
+}
+
+</style>
+
+<script>
+new Vue({
+  el: '#app',
+  ///router,
+  data: {
+      data_received: null,
+      n: 10
+  },
+  created: function () {
+    this.requestData();
+    window.setInterval(this.requestData, 1000);
+  },
+  methods: {
+    requestData(){
+      var _this = this;
+      $.getJSON('api/cardData3.json', function (data_received) {
+        _this.data_received = data_received;
+      });
+      console.log("Geral: Data requested");
+    }
+  }
+});
+</script>

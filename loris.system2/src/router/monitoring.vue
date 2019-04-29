@@ -1,3 +1,122 @@
 <template>
-  <h1>teste@</h1>
+  <div>
+    <h1>monitoring</h1>
+    <div v-for="cardConfig in pageConfig">
+      <component v-bind:cardConfig="cardConfig" v-bind:is="cardConfig.type"/>
+    </div>
+  </div>
 </template>
+
+<script>
+
+export default {
+  name: 'app',
+  data() {
+    return {
+      pageConfig: [{
+          "type": "cardTemporalSimple",
+          "title": "Tensão por fase (KV)",
+          "id": "0",
+          "updatePeriod": 600,
+          "aggregationTime": 300,
+          "series":[
+          	{
+                  "name": "Fase A",
+                  "variable": "ta",
+                  "data": [222, 230, 225, 230]
+              },{
+                  "name": "Fase B",
+                  "variable": "tb",
+                  "data": [212, 220, 210, 215]
+              },{
+                  "name": "Fase C",
+                  "variable": "tc",
+                  "data": [202, 225, 205, 200]
+              }
+      	]
+      },{
+          "type": "cardTemporalSimple",
+          "title": "Corrente por fase (A)",
+          "updatePeriod": 600,
+          "id": "1",
+          "aggregationTime": 300,
+          "series":[
+          	{
+                  "name": "Fase A",
+                  "variable": "ca",
+                  "data": [4, 4.2, 4.1, 4]
+              },{
+                  "name": "Fase B",
+                  "variable": "cb",
+                  "data": [3, 3.2, 3.1, 3]
+              },{
+                  "name": "Fase C",
+                  "variable": "cc",
+                  "data": [2, 2.2, 2.1, 2]
+              }
+      	]
+      },{
+          "type": "cardTemporalSimple",
+          "title": "Potência aparente trifásica (KVA) - Média 5 minutos",
+          "id": "2",
+          "updatePeriod": 600,
+          "aggregationTime": 300,
+          "series":[
+          	{
+                  "name": "Potência aparente trifásica",
+                  "variable": "st",
+                  "data": [75, 60, 40, 45]
+              }
+      	]
+      },{
+          "type": "cardTemporalSimple",
+          "title": "Potência aparente trifásica (KVA) - Média 15 minutos",
+          "id": "3",
+          "updatePeriod": 600,
+          "aggregationTime": 900,
+          "series":[
+              {
+                  "name": "Potência aparente trifásica",
+                  "variable": "st",
+                  "data": [60, 65, 45, 40]
+              }
+      	]
+      },{
+          "type": "cardTemporalSimple",
+          "title": "Potência aparente por fase (kVA)",
+          "id": "4",
+          "updatePeriod": 600,
+          "aggregationTime": 300,
+          "series":[
+          	{
+                  "name": "Fase A",
+                  "variable": "ta",
+                  "data": [30, 25, 25, 35]
+              },{
+                  "name": "Fase B",
+                  "variable": "tb",
+                  "data": [25, 20, 20, 30]
+              },{
+                  "name": "Fase C",
+                  "variable": "tc",
+                  "data": [20, 15, 15, 25]
+              }
+      	]
+      },{
+          "type": "cardTemporalSimple",
+          "title": "Fator de potência - Alta tensão",
+          "id": "5",
+          "updatePeriod": 600,
+          "aggregationTime": 300,
+          "series":[
+          	{
+                  "name": "Fator de potência",
+                  "variable": "fp",
+                  "data": [0.95, 0.96, 0.94, 0.92]
+              }
+      	]
+      }]
+    }
+  }
+}
+</script>
