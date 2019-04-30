@@ -47,11 +47,11 @@
 
 ## Loris.system pages
 
-* Cada página possui um JSON de configuração de determina quais gráficos ela vai conter 
+* Cada página possui um JSON de configuração de determina quais gráficos ela vai conter
 
 * Esse JSON possui apenas a modelagem abstrata da página, ignorando estilização
 
-* **Home**
+* **Dashboard**
 
   * Aprensenta um resumo e as principais informações sobre a fábrica
   * Alertas (consumo excessivo, velocidade máxima atingida, máquina parada, etc)
@@ -59,7 +59,7 @@
   * Indicadores diários (se tudo vai bem: produção, consumo, etc)
   * Estatísticas gerais (número de equipamentos instalados, problemas recentes, etc)
 
-* **Bashboard**
+* **Monitoring**
 
   * Grid de gráficos, dispostos de forma a facilitar a comparação
   * Array of generic cards:
@@ -83,7 +83,7 @@
 
 * **Série temporal simples**
   * Vue component: cardTemporalSimple
-  * https://www.highcharts.com/demo/line-basic 
+  * https://www.highcharts.com/demo/line-basic
   * Se receber apenas uma fase, omite a legenda
   * Propriedades do card
     * location: uid do dispositivo embarcado
@@ -92,7 +92,7 @@
     * name: o que vai aparecer no front
     * variable: o que vai ser puxado o banco de dados
     * data: array com os pontos
-  * Exemplo de card JSON: 
+  * Exemplo de card JSON:
 
 ``` JSON
 {
@@ -137,7 +137,7 @@
 
 
 
-# Design 
+# Design
 
 * Default font: helvetica neue
 * theme: dark blue

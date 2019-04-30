@@ -1,7 +1,7 @@
 <?php
 /*------------------------------------------------------------------*/
 //Return the conection stream
-function openConnection($database_name = 'smartifsc', $exit = true)
+function openConnection($database_name = 'proami', $exit = true)
 {
     $connection = pg_connect("host=labsmart.florianopolis.ifsc.edu.br port=5432 dbname=$database_name user=smartifsc_website password=51KTrPq3205 connect_timeout=1");
     if ($connection) {
