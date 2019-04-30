@@ -39,7 +39,7 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
-                  <form name="loginForm" class="user" action="\" onsubmit="return validateForm()">
+                  <form name="loginForm" class="user" onsubmit="return validateForm()">
                     <div class="form-group">
                       <input type="text" class="form-control form-control-user" id="exampleInputEmail" name="user" aria-describedby="emailHelp" placeholder="Enter username...">
                     </div>
@@ -88,13 +88,10 @@
 <script>
 function validateForm() {
   if (document.forms["loginForm"]["user"].value == "admin" && document.forms["loginForm"]["pass"].value == "admin") {
-    document.forms["loginForm"]["user"].value = null;
-    document.forms["loginForm"]["admin"].value = null;
-    //todo: remove o action e coloca um redirect por aqui
-    return true;
-} else {
-    alert("Sorry, wrong username of password");
-    return false
-}
+    window.location.href = "/";
+  } else {
+      alert("Sorry, wrong username of password");
+  }
+  return false;
 }
 </script>

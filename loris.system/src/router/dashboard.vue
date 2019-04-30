@@ -9,31 +9,14 @@
     <!-- Content Row -->
     <div class="row">
 
-      <!-- Earnings (Monthly) Card Example -->
+      <!-- Card -->
       <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-left-primary shadow h-100 py-2">
           <div class="card-body">
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
-                <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-              </div>
-              <div class="col-auto">
-                <i class="fas fa-calendar fa-2x text-gray-300"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Earnings (Monthly) Card Example -->
-      <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-success shadow h-100 py-2">
-          <div class="card-body">
-            <div class="row no-gutters align-items-center">
-              <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
-                <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                <div class="text-md font-weight-bold text-primary mb-1">Ecomomized (this Year)</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800">$489,00</div>
               </div>
               <div class="col-auto">
                 <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -43,20 +26,20 @@
         </div>
       </div>
 
-      <!-- Earnings (Monthly) Card Example -->
+      <!-- Card -->
       <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-left-info shadow h-100 py-2">
           <div class="card-body">
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
+                <div class="text-md font-weight-bold text-info mb-1">Management Goals</div>
                 <div class="row no-gutters align-items-center">
                   <div class="col-auto">
-                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">56%</div>
                   </div>
                   <div class="col">
                     <div class="progress progress-sm mr-2">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 56%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -69,13 +52,30 @@
         </div>
       </div>
 
-      <!-- Pending Requests Card Example -->
+      <!-- Card -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-md font-weight-bold text-success mb-1">Next ISO audit</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800">29/10/2019</div>
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-calendar fa-2x text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card -->
       <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-left-warning shadow h-100 py-2">
           <div class="card-body">
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Alerts</div>
+                <div class="text-md font-weight-bold text-warning mb-1">Production Alerts</div>
                 <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
               </div>
               <div class="col-auto">
@@ -106,14 +106,14 @@
                 <a class="dropdown-item" href="#">Details</a>
                 <a class="dropdown-item" href="#">Other indicators</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">How to improce</a>
+                <a class="dropdown-item" href="#">How to improve</a>
               </div>
             </div>
           </div>
           <!-- Card Body -->
           <div class="card-body">
             <div class="chart-area">
-              <canvas id="myAreaChart"></canvas>
+              <component v-bind:cardConfig="productionConfig" v-bind:is="productionConfig.type"/>
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@
 
       <!-- Pie Chart -->
       <div class="col-xl-4 col-lg-5">
-        <div class="card shadow mb-4">
+        <div class="card shadow mb-4" style="height: 492.2px">
           <!-- Card Header - Dropdown -->
           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
             <h6 class="m-0 font-weight-bold text-primary">Consuption sources</h6>
@@ -141,18 +141,7 @@
           <!-- Card Body -->
           <div class="card-body">
             <div class="chart-pie pt-4 pb-2">
-              <canvas id="myPieChart"></canvas>
-            </div>
-            <div class="mt-4 text-center small">
-              <span class="mr-2">
-                <i class="fas fa-circle text-primary"></i> Grinder
-              </span>
-              <span class="mr-2">
-                <i class="fas fa-circle text-success"></i> Conveyour
-              </span>
-              <span class="mr-2">
-                <i class="fas fa-circle text-info"></i> Ilumination
-              </span>
+              <component v-bind:cardConfig="pieConfig" v-bind:is="pieConfig.type"/>
             </div>
           </div>
         </div>
@@ -168,7 +157,7 @@
         <!-- Project Card Example -->
         <div class="card shadow mb-4">
           <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Daily Indicators</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Key Performance Indicators</h6>
           </div>
           <div class="card-body">
             <h4 class="small font-weight-bold"> Total production <span class="float-right">20 ton</span></h4>
@@ -214,8 +203,113 @@ export default {
   name: 'dashboard',
   data () {
     return {
-      msg: 'Welcome to Your dashboard'
+      msg: 'Welcome to Your dashboard',
+      productionConfig: {
+          "type": "cardTemporalSimple",
+          "title": "Production vs Energy",
+          "id": "6",
+          "updatePeriod": 600,
+          "aggregationTime": 300,
+          "series":[
+            {
+                  "name": "Grinder 1",
+                  "variable": "effG1",
+                  "data": [222, 230, 225, 230]
+              },{
+                  "name": "Grinder 2",
+                  "variable": "effG2",
+                  "data": [212, 220, 210, 215]
+              },{
+                  "name": "Copper Oven",
+                  "variable": "effG3",
+                  "data": [202, 225, 205, 200]
+              }
+        ]
+      },
+      pieConfig: {
+          "type": "cardPie",
+          "title": "",
+          "id": "7",
+          "updatePeriod": 600,
+          "series":[{
+              minPointSize: 0,
+              innerSize: '20%',
+              zMin: 0,
+              name: 'name',
+              data: [{
+                  name: 'Grinder',
+                  y: 120,
+                  z: 0.6
+              }, {
+                  name: 'Conveyour',
+                  y: 60,
+                  z: 0.85
+              }, {
+                  name: 'Ilumination',
+                  y: 35.4,
+                  z: 0.4
+              }]
+          }]
+      }
     }
   }
 }
 </script>
+
+<style scoped>
+  .card .card-header .dropdown {
+    line-height: 1;
+  }
+
+  .card .card-header .dropdown .dropdown-menu {
+    line-height: 1.5;
+  }
+
+  .card .card-header[data-toggle="collapse"] {
+    text-decoration: none;
+    position: relative;
+    padding: 0.75rem 3.25rem 0.75rem 1.25rem;
+  }
+
+  .card .card-header[data-toggle="collapse"]::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 1.725rem;
+    line-height: 51px;
+    font-weight: 900;
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    color: #d1d3e2;
+  }
+
+  .card .card-header[data-toggle="collapse"].collapsed {
+    border-radius: 0.35rem;
+  }
+
+  .card .card-header[data-toggle="collapse"].collapsed::after {
+    content: '\f105';
+  }
+
+  .chart-area {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+
+
+  .chart-bar {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+
+
+  .chart-pie {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-top:-30px
+  }
+
+</style>
