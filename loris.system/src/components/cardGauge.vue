@@ -1,7 +1,6 @@
 <template>
-  <section>
-    <h2>gauge</h2>
-    <div v-bind:id="cardConfig.id" style="height: 100%"></div>
+  <section style="height: 100%"">
+    <div v-bind:id="cardConfig.id" ></div>
   </section>
 </template>
 
@@ -21,7 +20,7 @@ export default {
           },
           pane: {
               center: ['50%', '85%'],
-              size: '140%',
+              size: '100%',
               startAngle: -90,
               endAngle: 90,
               background: {
