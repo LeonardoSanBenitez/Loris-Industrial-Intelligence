@@ -1,0 +1,424 @@
+                              % Iron Feed  % Silica Feed  Starch Flow  \
+% Iron Feed                   1.000000    -0.971833       0.027981      
+% Silica Feed                -0.971833     1.000000      -0.016073      
+Starch Flow                   0.027981    -0.016073       1.000000      
+Amina Flow                   -0.088148     0.078735       0.254748      
+Ore Pulp Flow                 0.160705    -0.150788       0.042703      
+Ore Pulp pH                   0.007451     0.008014       0.263020      
+Ore Pulp Density             -0.125518     0.104497       0.226004      
+Flotation Column 01 Air Flow -0.062379     0.091757       0.191131      
+Flotation Column 02 Air Flow -0.169430     0.182573       0.186585      
+Flotation Column 03 Air Flow -0.062207     0.084197       0.183288      
+Flotation Column 04 Air Flow -0.137413     0.160880       0.093520      
+Flotation Column 05 Air Flow  0.121035    -0.130210      -0.088245      
+Flotation Column 06 Air Flow -0.042531     0.067565       0.215780      
+Flotation Column 07 Air Flow -0.016356     0.045300       0.194786      
+Flotation Column 01 Level     0.029499    -0.038291      -0.294380      
+Flotation Column 02 Level     0.020839    -0.036968      -0.278422      
+Flotation Column 03 Level     0.015191    -0.022675      -0.301757      
+Flotation Column 04 Level     0.016108    -0.034050      -0.012612      
+Flotation Column 05 Level     0.023288    -0.043753      -0.055528      
+Flotation Column 06 Level     0.003694    -0.019502      -0.071722      
+Flotation Column 07 Level     0.025723    -0.046413      -0.038193      
+% Iron Concentrate            0.055424    -0.044168       0.069657      
+% Silica Concentrate         -0.077052     0.072724      -0.066394      
+
+                              Amina Flow  Ore Pulp Flow  Ore Pulp pH  \
+% Iron Feed                  -0.088148    0.160705       0.007451      
+% Silica Feed                 0.078735   -0.150788       0.008014      
+Starch Flow                   0.254748    0.042703       0.263020      
+Amina Flow                    1.000000    0.212252       0.123690      
+Ore Pulp Flow                 0.212252    1.000000       0.118376      
+Ore Pulp pH                   0.123690    0.118376       1.000000      
+Ore Pulp Density              0.655788    0.012279       0.115189      
+Flotation Column 01 Air Flow  0.111321   -0.137866       0.163073      
+Flotation Column 02 Air Flow  0.122911   -0.118549       0.144935      
+Flotation Column 03 Air Flow  0.101957   -0.140761       0.193372      
+Flotation Column 04 Air Flow  0.016080   -0.155990       0.150173      
+Flotation Column 05 Air Flow -0.044029    0.166989      -0.139464      
+Flotation Column 06 Air Flow  0.119966   -0.159255       0.113741      
+Flotation Column 07 Air Flow  0.079558   -0.140914       0.174684      
+Flotation Column 01 Level    -0.268536   -0.008579      -0.165739      
+Flotation Column 02 Level    -0.234454   -0.008049      -0.153557      
+Flotation Column 03 Level    -0.286968   -0.054351      -0.140070      
+Flotation Column 04 Level    -0.180301   -0.009784       0.046371      
+Flotation Column 05 Level    -0.211712    0.002260       0.013041      
+Flotation Column 06 Level    -0.197758   -0.016661      -0.075034      
+Flotation Column 07 Level    -0.168050    0.016585       0.019021      
+% Iron Concentrate           -0.110148    0.083120       0.192992      
+% Silica Concentrate          0.156701    0.008222      -0.147739      
+
+                              Ore Pulp Density  Flotation Column 01 Air Flow  \
+% Iron Feed                  -0.125518         -0.062379                       
+% Silica Feed                 0.104497          0.091757                       
+Starch Flow                   0.226004          0.191131                       
+Amina Flow                    0.655788          0.111321                       
+Ore Pulp Flow                 0.012279         -0.137866                       
+Ore Pulp pH                   0.115189          0.163073                       
+Ore Pulp Density              1.000000         -0.005142                       
+Flotation Column 01 Air Flow -0.005142          1.000000                       
+Flotation Column 02 Air Flow  0.025794          0.848277                       
+Flotation Column 03 Air Flow -0.031673          0.954528                       
+Flotation Column 04 Air Flow -0.096839          0.474586                       
+Flotation Column 05 Air Flow  0.044687         -0.203700                       
+Flotation Column 06 Air Flow -0.030566          0.662963                       
+Flotation Column 07 Air Flow -0.052294          0.646768                       
+Flotation Column 01 Level    -0.111608         -0.441573                       
+Flotation Column 02 Level    -0.093024         -0.425758                       
+Flotation Column 03 Level    -0.149584         -0.371791                       
+Flotation Column 04 Level    -0.087761         -0.061940                       
+Flotation Column 05 Level    -0.140881         -0.091386                       
+Flotation Column 06 Level    -0.099817         -0.118992                       
+Flotation Column 07 Level    -0.086067         -0.110726                       
+% Iron Concentrate            0.015580          0.098599                       
+% Silica Concentrate          0.046984         -0.219158                       
+
+                              Flotation Column 02 Air Flow  \
+% Iron Feed                  -0.169430                       
+% Silica Feed                 0.182573                       
+Starch Flow                   0.186585                       
+Amina Flow                    0.122911                       
+Ore Pulp Flow                -0.118549                       
+Ore Pulp pH                   0.144935                       
+Ore Pulp Density              0.025794                       
+Flotation Column 01 Air Flow  0.848277                       
+Flotation Column 02 Air Flow  1.000000                       
+Flotation Column 03 Air Flow  0.860438                       
+Flotation Column 04 Air Flow  0.434033                       
+Flotation Column 05 Air Flow -0.181946                       
+Flotation Column 06 Air Flow  0.588519                       
+Flotation Column 07 Air Flow  0.578578                       
+Flotation Column 01 Level    -0.432033                       
+Flotation Column 02 Level    -0.422855                       
+Flotation Column 03 Level    -0.365535                       
+Flotation Column 04 Level    -0.074312                       
+Flotation Column 05 Level    -0.110512                       
+Flotation Column 06 Level    -0.117619                       
+Flotation Column 07 Level    -0.112403                       
+% Iron Concentrate            0.058744                       
+% Silica Concentrate         -0.167398                       
+
+                              Flotation Column 03 Air Flow  \
+% Iron Feed                  -0.062207                       
+% Silica Feed                 0.084197                       
+Starch Flow                   0.183288                       
+Amina Flow                    0.101957                       
+Ore Pulp Flow                -0.140761                       
+Ore Pulp pH                   0.193372                       
+Ore Pulp Density             -0.031673                       
+Flotation Column 01 Air Flow  0.954528                       
+Flotation Column 02 Air Flow  0.860438                       
+Flotation Column 03 Air Flow  1.000000                       
+Flotation Column 04 Air Flow  0.490556                       
+Flotation Column 05 Air Flow -0.225178                       
+Flotation Column 06 Air Flow  0.659506                       
+Flotation Column 07 Air Flow  0.649435                       
+Flotation Column 01 Level    -0.440823                       
+Flotation Column 02 Level    -0.420932                       
+Flotation Column 03 Level    -0.364773                       
+Flotation Column 04 Level    -0.046685                       
+Flotation Column 05 Level    -0.063693                       
+Flotation Column 06 Level    -0.100419                       
+Flotation Column 07 Level    -0.085294                       
+% Iron Concentrate            0.100136                       
+% Silica Concentrate         -0.218891                       
+
+                              Flotation Column 04 Air Flow  \
+% Iron Feed                  -0.137413                       
+% Silica Feed                 0.160880                       
+Starch Flow                   0.093520                       
+Amina Flow                    0.016080                       
+Ore Pulp Flow                -0.155990                       
+Ore Pulp pH                   0.150173                       
+Ore Pulp Density             -0.096839                       
+Flotation Column 01 Air Flow  0.474586                       
+Flotation Column 02 Air Flow  0.434033                       
+Flotation Column 03 Air Flow  0.490556                       
+Flotation Column 04 Air Flow  1.000000                       
+Flotation Column 05 Air Flow -0.319883                       
+Flotation Column 06 Air Flow  0.489578                       
+Flotation Column 07 Air Flow  0.552567                       
+Flotation Column 01 Level    -0.288952                       
+Flotation Column 02 Level    -0.283872                       
+Flotation Column 03 Level    -0.223601                       
+Flotation Column 04 Level    -0.140412                       
+Flotation Column 05 Level    -0.181456                       
+Flotation Column 06 Level    -0.214733                       
+Flotation Column 07 Level    -0.188587                       
+% Iron Concentrate           -0.067494                       
+% Silica Concentrate         -0.005011                       
+
+                              Flotation Column 05 Air Flow  \
+% Iron Feed                   0.121035                       
+% Silica Feed                -0.130210                       
+Starch Flow                  -0.088245                       
+Amina Flow                   -0.044029                       
+Ore Pulp Flow                 0.166989                       
+Ore Pulp pH                  -0.139464                       
+Ore Pulp Density              0.044687                       
+Flotation Column 01 Air Flow -0.203700                       
+Flotation Column 02 Air Flow -0.181946                       
+Flotation Column 03 Air Flow -0.225178                       
+Flotation Column 04 Air Flow -0.319883                       
+Flotation Column 05 Air Flow  1.000000                       
+Flotation Column 06 Air Flow -0.243787                       
+Flotation Column 07 Air Flow -0.256510                       
+Flotation Column 01 Level     0.213420                       
+Flotation Column 02 Level     0.206918                       
+Flotation Column 03 Level     0.178038                       
+Flotation Column 04 Level    -0.006791                       
+Flotation Column 05 Level     0.031099                       
+Flotation Column 06 Level     0.040106                       
+Flotation Column 07 Level     0.055137                       
+% Iron Concentrate            0.088762                       
+% Silica Concentrate         -0.009293                       
+
+                              Flotation Column 06 Air Flow  \
+% Iron Feed                  -0.042531                       
+% Silica Feed                 0.067565                       
+Starch Flow                   0.215780                       
+Amina Flow                    0.119966                       
+Ore Pulp Flow                -0.159255                       
+Ore Pulp pH                   0.113741                       
+Ore Pulp Density             -0.030566                       
+Flotation Column 01 Air Flow  0.662963                       
+Flotation Column 02 Air Flow  0.588519                       
+Flotation Column 03 Air Flow  0.659506                       
+Flotation Column 04 Air Flow  0.489578                       
+Flotation Column 05 Air Flow -0.243787                       
+Flotation Column 06 Air Flow  1.000000                       
+Flotation Column 07 Air Flow  0.854067                       
+Flotation Column 01 Level    -0.383965                       
+Flotation Column 02 Level    -0.343954                       
+Flotation Column 03 Level    -0.372441                       
+Flotation Column 04 Level    -0.207911                       
+Flotation Column 05 Level    -0.263713                       
+Flotation Column 06 Level    -0.268531                       
+Flotation Column 07 Level    -0.266287                       
+% Iron Concentrate           -0.036523                       
+% Silica Concentrate         -0.049650                       
+
+                              Flotation Column 07 Air Flow  \
+% Iron Feed                  -0.016356                       
+% Silica Feed                 0.045300                       
+Starch Flow                   0.194786                       
+Amina Flow                    0.079558                       
+Ore Pulp Flow                -0.140914                       
+Ore Pulp pH                   0.174684                       
+Ore Pulp Density             -0.052294                       
+Flotation Column 01 Air Flow  0.646768                       
+Flotation Column 02 Air Flow  0.578578                       
+Flotation Column 03 Air Flow  0.649435                       
+Flotation Column 04 Air Flow  0.552567                       
+Flotation Column 05 Air Flow -0.256510                       
+Flotation Column 06 Air Flow  0.854067                       
+Flotation Column 07 Air Flow  1.000000                       
+Flotation Column 01 Level    -0.372275                       
+Flotation Column 02 Level    -0.351261                       
+Flotation Column 03 Level    -0.342365                       
+Flotation Column 04 Level    -0.173442                       
+Flotation Column 05 Level    -0.209300                       
+Flotation Column 06 Level    -0.245115                       
+Flotation Column 07 Level    -0.237407                       
+% Iron Concentrate           -0.002447                       
+% Silica Concentrate         -0.071776                       
+
+                              Flotation Column 01 Level  \
+% Iron Feed                   0.029499                    
+% Silica Feed                -0.038291                    
+Starch Flow                  -0.294380                    
+Amina Flow                   -0.268536                    
+Ore Pulp Flow                -0.008579                    
+Ore Pulp pH                  -0.165739                    
+Ore Pulp Density             -0.111608                    
+Flotation Column 01 Air Flow -0.441573                    
+Flotation Column 02 Air Flow -0.432033                    
+Flotation Column 03 Air Flow -0.440823                    
+Flotation Column 04 Air Flow -0.288952                    
+Flotation Column 05 Air Flow  0.213420                    
+Flotation Column 06 Air Flow -0.383965                    
+Flotation Column 07 Air Flow -0.372275                    
+Flotation Column 01 Level     1.000000                    
+Flotation Column 02 Level     0.717500                    
+Flotation Column 03 Level     0.725294                    
+Flotation Column 04 Level     0.257506                    
+Flotation Column 05 Level     0.325619                    
+Flotation Column 06 Level     0.300254                    
+Flotation Column 07 Level     0.304846                    
+% Iron Concentrate           -0.014223                    
+% Silica Concentrate          0.017217                    
+
+                              Flotation Column 02 Level  \
+% Iron Feed                   0.020839                    
+% Silica Feed                -0.036968                    
+Starch Flow                  -0.278422                    
+Amina Flow                   -0.234454                    
+Ore Pulp Flow                -0.008049                    
+Ore Pulp pH                  -0.153557                    
+Ore Pulp Density             -0.093024                    
+Flotation Column 01 Air Flow -0.425758                    
+Flotation Column 02 Air Flow -0.422855                    
+Flotation Column 03 Air Flow -0.420932                    
+Flotation Column 04 Air Flow -0.283872                    
+Flotation Column 05 Air Flow  0.206918                    
+Flotation Column 06 Air Flow -0.343954                    
+Flotation Column 07 Air Flow -0.351261                    
+Flotation Column 01 Level     0.717500                    
+Flotation Column 02 Level     1.000000                    
+Flotation Column 03 Level     0.654044                    
+Flotation Column 04 Level     0.189753                    
+Flotation Column 05 Level     0.267095                    
+Flotation Column 06 Level     0.285417                    
+Flotation Column 07 Level     0.235565                    
+% Iron Concentrate           -0.026048                    
+% Silica Concentrate          0.030955                    
+
+                              Flotation Column 03 Level  \
+% Iron Feed                   0.015191                    
+% Silica Feed                -0.022675                    
+Starch Flow                  -0.301757                    
+Amina Flow                   -0.286968                    
+Ore Pulp Flow                -0.054351                    
+Ore Pulp pH                  -0.140070                    
+Ore Pulp Density             -0.149584                    
+Flotation Column 01 Air Flow -0.371791                    
+Flotation Column 02 Air Flow -0.365535                    
+Flotation Column 03 Air Flow -0.364773                    
+Flotation Column 04 Air Flow -0.223601                    
+Flotation Column 05 Air Flow  0.178038                    
+Flotation Column 06 Air Flow -0.372441                    
+Flotation Column 07 Air Flow -0.342365                    
+Flotation Column 01 Level     0.725294                    
+Flotation Column 02 Level     0.654044                    
+Flotation Column 03 Level     1.000000                    
+Flotation Column 04 Level     0.242408                    
+Flotation Column 05 Level     0.322605                    
+Flotation Column 06 Level     0.300531                    
+Flotation Column 07 Level     0.264239                    
+% Iron Concentrate           -0.022084                    
+% Silica Concentrate          0.014246                    
+
+                              Flotation Column 04 Level  \
+% Iron Feed                   0.016108                    
+% Silica Feed                -0.034050                    
+Starch Flow                  -0.012612                    
+Amina Flow                   -0.180301                    
+Ore Pulp Flow                -0.009784                    
+Ore Pulp pH                   0.046371                    
+Ore Pulp Density             -0.087761                    
+Flotation Column 01 Air Flow -0.061940                    
+Flotation Column 02 Air Flow -0.074312                    
+Flotation Column 03 Air Flow -0.046685                    
+Flotation Column 04 Air Flow -0.140412                    
+Flotation Column 05 Air Flow -0.006791                    
+Flotation Column 06 Air Flow -0.207911                    
+Flotation Column 07 Air Flow -0.173442                    
+Flotation Column 01 Level     0.257506                    
+Flotation Column 02 Level     0.189753                    
+Flotation Column 03 Level     0.242408                    
+Flotation Column 04 Level     1.000000                    
+Flotation Column 05 Level     0.682411                    
+Flotation Column 06 Level     0.508210                    
+Flotation Column 07 Level     0.619252                    
+% Iron Concentrate            0.137019                    
+% Silica Concentrate         -0.149456                    
+
+                              Flotation Column 05 Level  \
+% Iron Feed                   0.023288                    
+% Silica Feed                -0.043753                    
+Starch Flow                  -0.055528                    
+Amina Flow                   -0.211712                    
+Ore Pulp Flow                 0.002260                    
+Ore Pulp pH                   0.013041                    
+Ore Pulp Density             -0.140881                    
+Flotation Column 01 Air Flow -0.091386                    
+Flotation Column 02 Air Flow -0.110512                    
+Flotation Column 03 Air Flow -0.063693                    
+Flotation Column 04 Air Flow -0.181456                    
+Flotation Column 05 Air Flow  0.031099                    
+Flotation Column 06 Air Flow -0.263713                    
+Flotation Column 07 Air Flow -0.209300                    
+Flotation Column 01 Level     0.325619                    
+Flotation Column 02 Level     0.267095                    
+Flotation Column 03 Level     0.322605                    
+Flotation Column 04 Level     0.682411                    
+Flotation Column 05 Level     1.000000                    
+Flotation Column 06 Level     0.570129                    
+Flotation Column 07 Level     0.710699                    
+% Iron Concentrate            0.160824                    
+% Silica Concentrate         -0.169170                    
+
+                              Flotation Column 06 Level  \
+% Iron Feed                   0.003694                    
+% Silica Feed                -0.019502                    
+Starch Flow                  -0.071722                    
+Amina Flow                   -0.197758                    
+Ore Pulp Flow                -0.016661                    
+Ore Pulp pH                  -0.075034                    
+Ore Pulp Density             -0.099817                    
+Flotation Column 01 Air Flow -0.118992                    
+Flotation Column 02 Air Flow -0.117619                    
+Flotation Column 03 Air Flow -0.100419                    
+Flotation Column 04 Air Flow -0.214733                    
+Flotation Column 05 Air Flow  0.040106                    
+Flotation Column 06 Air Flow -0.268531                    
+Flotation Column 07 Air Flow -0.245115                    
+Flotation Column 01 Level     0.300254                    
+Flotation Column 02 Level     0.285417                    
+Flotation Column 03 Level     0.300531                    
+Flotation Column 04 Level     0.508210                    
+Flotation Column 05 Level     0.570129                    
+Flotation Column 06 Level     1.000000                    
+Flotation Column 07 Level     0.606954                    
+% Iron Concentrate            0.082300                    
+% Silica Concentrate         -0.102443                    
+
+                              Flotation Column 07 Level  % Iron Concentrate  \
+% Iron Feed                   0.025723                   0.055424             
+% Silica Feed                -0.046413                  -0.044168             
+Starch Flow                  -0.038193                   0.069657             
+Amina Flow                   -0.168050                  -0.110148             
+Ore Pulp Flow                 0.016585                   0.083120             
+Ore Pulp pH                   0.019021                   0.192992             
+Ore Pulp Density             -0.086067                   0.015580             
+Flotation Column 01 Air Flow -0.110726                   0.098599             
+Flotation Column 02 Air Flow -0.112403                   0.058744             
+Flotation Column 03 Air Flow -0.085294                   0.100136             
+Flotation Column 04 Air Flow -0.188587                  -0.067494             
+Flotation Column 05 Air Flow  0.055137                   0.088762             
+Flotation Column 06 Air Flow -0.266287                  -0.036523             
+Flotation Column 07 Air Flow -0.237407                  -0.002447             
+Flotation Column 01 Level     0.304846                  -0.014223             
+Flotation Column 02 Level     0.235565                  -0.026048             
+Flotation Column 03 Level     0.264239                  -0.022084             
+Flotation Column 04 Level     0.619252                   0.137019             
+Flotation Column 05 Level     0.710699                   0.160824             
+Flotation Column 06 Level     0.606954                   0.082300             
+Flotation Column 07 Level     1.000000                   0.146508             
+% Iron Concentrate            0.146508                   1.000000             
+% Silica Concentrate         -0.141387                  -0.800560             
+
+                              % Silica Concentrate  
+% Iron Feed                  -0.077052              
+% Silica Feed                 0.072724              
+Starch Flow                  -0.066394              
+Amina Flow                    0.156701              
+Ore Pulp Flow                 0.008222              
+Ore Pulp pH                  -0.147739              
+Ore Pulp Density              0.046984              
+Flotation Column 01 Air Flow -0.219158              
+Flotation Column 02 Air Flow -0.167398              
+Flotation Column 03 Air Flow -0.218891              
+Flotation Column 04 Air Flow -0.005011              
+Flotation Column 05 Air Flow -0.009293              
+Flotation Column 06 Air Flow -0.049650              
+Flotation Column 07 Air Flow -0.071776              
+Flotation Column 01 Level     0.017217              
+Flotation Column 02 Level     0.030955              
+Flotation Column 03 Level     0.014246              
+Flotation Column 04 Level    -0.149456              
+Flotation Column 05 Level    -0.169170              
+Flotation Column 06 Level    -0.102443              
+Flotation Column 07 Level    -0.141387              
+% Iron Concentrate           -0.800560              
+% Silica Concentrate          1.000000              
