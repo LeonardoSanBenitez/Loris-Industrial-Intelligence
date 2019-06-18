@@ -53,10 +53,11 @@
 
 # Resultados do algoritmo
 
-* O que pode ser considerado consumo anormal
+* Os dados não foram selecionados com muita seriedade, foi mais para testar o algoritmo
+* Selecionou-se alguns campus que, olhando a curva de carga, pareciam ter características anormais, e usou-se isso para treinar o algoritmo
+* O que foi considerado consumo anormal
   * oscilações de alta frequencia (aqueles chaveamentos, spikes)
-  * Oscilações de baixa frequencia (o consumo medio varia ao longo da 
-    noite)
+  * Oscilações de baixa frequencia (o consumo medio varia ao longo da noite)
   * Fator de carga ruim
   * Tenham um consumo muito alto em relação ao dia (ou seja, campus que provavelmente deixam muitos equipamentos ligados)
 * Análise dos resultados
