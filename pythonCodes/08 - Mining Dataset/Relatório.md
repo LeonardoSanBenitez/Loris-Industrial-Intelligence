@@ -87,7 +87,10 @@
 
   ![1558036598005](Images - temp/1558104962939.png)
 
-# Regression
+# Regression 1: random forrest
+
+* Foco: desempenho
+
 * Este código foi altamente baseado na implementação de Roger Bellavista, disponível em https://www.kaggle.com/rogerbellavista/randomforestregressor-mae-0-0922-rmse-0-2314
 
 * O algoritmo é simples e muito “off the shell”, porem o autor do dataset comentou (no código original):
@@ -103,7 +106,7 @@
 
 * split 80% of training 20% of test
 * **Random Forest Regression**
-  * Number of estimator: 10
+  * Number of estimators: 10
   * No prunning (the dataset is big, but we dont care for performace or interpretation)
   * Algoritmos baseados em árvores de decisão (como o Random Forest) são capazes de <u>gerar um modelo interpretável</u>, de forma que é possível extrair conhecimento útil (e não apenas decisões)
   * Tal árvore pode ser usada para modelar a operação da máquina, assim como para obter novos *insights* sobre seu funcionamento
@@ -151,14 +154,9 @@
 
 
 
+# Regression 2: simple tree
 
-
-
-
-
-
-
-
+* h=15
 
 
 
