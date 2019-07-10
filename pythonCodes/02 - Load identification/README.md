@@ -81,7 +81,7 @@
 
 * **Confusion matrix**
   * $C_{i,j}$ is equal to the number of observations known to be in group $i$ but
-    predicted to be in group $j​$
+    predicted to be in group $j$
   * The elements are whole numbers (not rates)
   * Main diagonal: right predicted
   * We can also normalize, and add colors to the cells
