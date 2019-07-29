@@ -1,9 +1,10 @@
 # LorisWeb
 * Main repository of the Loris Industrial Intelligence web application
 * **Objetivos da plataforma**
-  * Fornecer um ambiente completo de monitoramento em tempo real de parâmetros físicos
-  * Além dos dados “crus”, entregaremos análises e interpretações dos dados
-
+  * Fornecer um ambiente completo de monitoramento em tempo real de parâmetros industriais
+  * Explicitar os aspectos mais importantes da operação industrial utilizando ferramentas de Visualização de Dados
+* Analisar padrões e tendencias utilizando *Machine Learning* (uma sub área de Inteligência Artificial)
+  
 * **Requisitos gerais**
   * Responsivo
   * Flexível (modular)
@@ -20,16 +21,15 @@
 * **loris.system**
   * main application
   * nodejs + vueCli
+  * Database: PostgreeSQL
 * **examples**
   * black-dashboard-master: template from [CreativeTim](https://www.creative-tim.com/product/black-dashboard)
   * simples-dashboard: template from [startbootstrap](https://startbootstrap.com/themes/sb-admin-2/)
   * simple-sidebar: template from [startbootrap](https://startbootstrap.com/templates/simple-sidebar/)
-* **dataBase**
-  * codes and documentation of the database
-  * PostgreeSQL
 * **pythonCodes**
   * Test, exercices and real analysis using python
   * IDE used: jupiter nodebooks
+  * No futuro todos esses pequenos códigos deverão ser integrados em um software adequado ao *deploy*, com uma API que será acessada pela plataforma web
 
 ## Implementation guidelines
 
