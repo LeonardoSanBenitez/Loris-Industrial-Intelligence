@@ -214,3 +214,4 @@
 ```
 
 ![palette](examples/palette.png)
+
