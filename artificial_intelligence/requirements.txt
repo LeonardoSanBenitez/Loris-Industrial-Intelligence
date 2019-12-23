@@ -1,0 +1,26 @@
+
+# Math and visualization
+numpy==1.17.2 
+pandas==0.25.1 
+matplotlib==3.0.3 
+seaborn==0.9.0 
+
+# AI 
+keras==2.2.4
+keras-tqdm==2.0.1
+mrcnn==0.2
+scikit-learn==0.22 
+pydot==1.2.3 # model vizualization
+deepstack==0.0.9
+
+# Unmet dependencies of mrcnn 
+cython
+h5py==2.8.0
+scikit-image
+IPython
+
+# Other
+Pillow
+nbresuse==0.3.2 #to jupyter
+opencv-python==3.4.2.17
+albumentations==0.4.2
