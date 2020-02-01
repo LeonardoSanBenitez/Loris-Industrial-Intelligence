@@ -3,13 +3,12 @@
 # Last modification: 2019/12/23
 # Author: Leonardo Benitez
 # About the library
-#   * Just to regression models (now)
+#   * Works for both regression and classification
 #   * The models should be pre trained
 #   * Accept any estimator with predict and fit (to L1) methods
 #   * X and y should be numpy arrays
 # TODOs
 #   * make that instalable by pip (via editable file or github)
-#   * Expand to classification
 
 import pandas as pd
 import numpy as np
