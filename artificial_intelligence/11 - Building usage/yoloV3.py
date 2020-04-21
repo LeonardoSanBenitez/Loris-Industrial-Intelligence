@@ -1,5 +1,6 @@
 # create a YOLOv3 Keras model and save it to file
-# based on https://github.com/experiencor/keras-yolo3
+# based on https://github.com/experiencor/keras-yolo3 
+# and https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/
 
 #!wget https://pjreddie.com/media/files/yolov3.weights
 

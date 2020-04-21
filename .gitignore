@@ -2,3 +2,5 @@ artificial_intelligence/datasets/
 artificial_intelligence/assets/
 */datasets/
 */assets/
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
